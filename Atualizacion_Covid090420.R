@@ -1,4 +1,4 @@
-# Actualización de COVID-19
+# Actualización de COVID-19 hasta el dia 12/04
 
 # Librerias a utilizar
 library(data.table)
