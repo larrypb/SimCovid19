@@ -11,13 +11,13 @@ Covid_Mexico <- read.csv("Actualizacion_covid_19.csv")
 # Transformamos a data table 
 Dt_Covid <- as.data.table(Covid_Mexico)
 attach(Dt_Covid)
-dias <- 1:46
+dias <- 1:47
 
 # Graficamos
 x11()
 ggplot(data = Dt_Covid, 
        aes(x = dias, y = Confirmados)) + 
-  geom_point(colour = "tomato", size = 2) + theme(panel.background = element_rect(fill = 'gray87', colour = 'gray48'))+
+  geom_point(colour = "red", size = 2) + theme(panel.background = element_rect(fill = 'gray48', colour = 'black'))+
   theme(axis.text.x = element_text(angle = 90, size = 8,hjust = 1/2, vjust = 1))
 
 # modelo matematico
