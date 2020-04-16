@@ -17,7 +17,7 @@ dias <- 1:47
 x11()
 ggplot(data = Dt_Covid, 
        aes(x = dias, y = Confirmados)) + 
-  geom_point(colour = "red", size = 2) + theme(panel.background = element_rect(fill = 'gray48', colour = 'black'))+
+  geom_point(colour = "red", size = 2) + theme(panel.background = element_rect(fill = 'gray90', colour = 'black'))+
   theme(axis.text.x = element_text(angle = 90, size = 8,hjust = 1/2, vjust = 1))
 
 # modelo matematico
@@ -27,7 +27,7 @@ x11()
 ggplot(data = Dt_Covid, 
        aes(x = dias, y = log(Confirmados))) + 
   geom_point(colour = "tomato", size = 2) + 
-  theme(panel.background = element_rect(fill = 'gray87', colour = 'gray48'))+
+  theme(panel.background = element_rect(fill = 'gray90', colour = 'gray48'))+
   geom_abline(intercept = modelo1$coefficients[1], 
               slope = modelo1$coefficients[2], color = "deepskyblue4", size = 1)+
   theme(axis.text.x = element_text(angle = 90, size = 8,hjust = 1/2, vjust = 1))
