@@ -11,7 +11,7 @@ Covid_Mexico <- read.csv("Actualizacion_covid_19.csv")
 # Transformamos a data table 
 Dt_Covid <- as.data.table(Covid_Mexico)
 attach(Dt_Covid)
-dias <- 1:47
+dias <- 1:50
 
 # Graficamos
 x11()
@@ -37,7 +37,7 @@ predicciones <- round(predict(modelo1), 2)
 round(exp(predicciones), 0)
 
 # funcion modeladora
-x <- 47
+x <- 50
 y <- exp(0.3072*x + 0.1976)
 
 
