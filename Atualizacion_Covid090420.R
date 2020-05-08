@@ -11,7 +11,7 @@ Covid_Mexico <- read.csv("Actualizacion_covid_19.csv")
 # Transformamos a data table 
 Dt_Covid <- as.data.table(Covid_Mexico)
 attach(Dt_Covid)
-dias <- 1:55
+dias <- 1:59
 
 # Graficamos
 x11()
